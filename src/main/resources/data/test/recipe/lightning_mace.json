@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#/#",
+    "GMG",
+    "#E#"
+  ],
+  "key": {
+    "#": "minecraft:gold_ingot",
+    "/": "minecraft:lightning_rod",
+    "G": "minecraft:gold_block",
+    "M": "minecraft:mace",
+    "E": "minecraft:enchanted_golden_apple"
+  },
+  "result": {
+      "count": 1,
+      "id": "pipboy:lightning_mace"
+    }
+}

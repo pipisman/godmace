@@ -85,6 +85,14 @@ public class LightningMace extends Item {
 	public void hurtEnemy(ItemStack p_334046_, LivingEntity p_333712_, LivingEntity p_333812_) {
 		if (canSmashAttack(p_333812_)) {
 			ServerLevel serverlevel = (ServerLevel) p_333812_.level();
+			net.minecraft.world.entity.LightningBolt lightningBolt = net.minecraft.world.entity.EntityType.LIGHTNING_BOLT.create(
+				    serverlevel, 
+				    net.minecraft.world.entity.EntitySpawnReason.TRIGGERED
+				);
+		    if (lightningBolt != null) {
+		    	lightningBolt.setPos(p_333712_.position());
+		        serverlevel.addFreshEntity(lightningBolt);
+		    }
 			p_333812_.setDeltaMovement(p_333812_.getDeltaMovement().with(Direction.Axis.Y, 0.01F));
 			if (p_333812_ instanceof ServerPlayer serverplayer) {
 				serverplayer.currentImpulseImpactPos = this.calculateImpactPosition(serverplayer);
