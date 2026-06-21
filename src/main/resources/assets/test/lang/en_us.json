@@ -1,0 +1,15 @@
+{
+  "itemGroup.test": "Example Mod Tab",
+  "block.test.example_block": "Example Block",
+  "item.test.example_item": "Example Item",
+  "item.test.boo": "lunge",
+  "item.test.staff": "Ender Pearl Staff",
+  "test.configuration.title": "test Configs",
+  "test.configuration.section.test.common.toml": "test Configs",
+  "test.configuration.section.test.common.toml.title": "test Configs",
+  "test.configuration.items": "Item List",
+  "test.configuration.logDirtBlock": "Log Dirt Block",
+  "test.configuration.magicNumberIntroduction": "Magic Number Text",
+  "test.configuration.magicNumber": "Magic Number"
+  
+}
